@@ -48,12 +48,8 @@ session_start();
 					 <li style="color:#FFFFFF">
                         <a style="color:#FFFFFF" href="index.php"><i class="fa fa-home fa-fw"></i>Home</a>
                     </li>
-					
-					<li style="color:#FFFFFF">
-                        <a style="color:#FFFFFF" href="index.php?info=about"><i class="fa fa-home fa-fw"></i>About</a>
-                    </li>
-					
-					<li><a style="color:#FFFFFF" href="index.php?info=registration"><i class="fa fa-sign-out fa-fw"></i>Registration</a></li>
+
+			<li><a style="color:#FFFFFF" href="index.php?info=registration"><i class="fa fa-sign-out fa-fw"></i>Registration</a></li>
 				
 				
 								
@@ -68,15 +64,6 @@ session_start();
         </ul>
       </li> 
 	  
-	
-	  
-	  
-	 <li>
-                        <a style="color:#FFFFFF" href="index.php?info=contact"><i class="fa fa-phone fa-fw"></i>Contact</a>
-                    </li>
-					 	
-					
-                   
 
                 </ul>
             </div>
@@ -181,29 +168,200 @@ session_start();
             <div class="col-lg-12">
                
 				
-				
-				
+		    
+	<!--iam student-->
+		    <div class"iamstudent">
+			    
+<style>
+	/*set border to the form*/
 	
+	form {
+		border: 3px solid #f1f1f1;
+	}
+	/*assign full width inputs*/
 	
-				
-				
-				
-			<div class="col-sm-10" style="margin-top:60px;margin-bottom:80px">
-				<h2>About Faculty feedback System</h2>
-				Student Feedback system for College in PHP(SOurce code) 
-Here we have developed the a faculty feedback system, which is generally used in the college to rate the faculty based on the performance...Here we have 2 modules such as administrator, student.
-
-Administrator is the one who creates the student account by adding all student info and assigning the username and password. 
-Admin als0 checks the result once all students entered the feedback..
-We can start the development from the login page, where we have given the option to login as admin and student...Here since we have only one admin account, so no need to create the a database to store admin info...so the admin username is "admin" and password is "sandeep"...select admin in the radio button and login 
-
-You can perform all admin actions such as login to the account and check result..
-
-I fyou entered the student user and password and selected student option, then it will show all student information and let you enter the feedback based on the subject..
-
-Before we can look into the php code, you need to create a database called "feed" with two tables in it..one as student and another one as take
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+	/*set a style for the buttons*/
 	
-			</div>
+	button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+	/* set a hover effect for the button*/
+	
+	button:hover {
+		opacity: 0.8;
+	}
+	/*set extra style for the cancel button*/
+	
+	.cancelbtn {
+		width: auto;
+		padding: 10px 18px;
+		background-color: #f44336;
+	}
+	/*centre the display image inside the container*/
+	
+	.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+	}
+	/*set image properties*/
+	
+	img.avatar {
+		width: 40%;
+		border-radius: 50%;
+	}
+	/*set padding to the container*/
+	
+	.container {
+		padding: 16px;
+	}
+	/*set the forgot password text*/
+	
+	span.psw {
+		float: right;
+		padding-top: 16px;
+	}
+	/*set styles for span and cancel button on small screens*/
+	
+	@media screen and (max-width: 300px) {
+		span.psw {
+			display: block;
+			float: none;
+		}
+		.cancelbtn {
+			width: 100%;
+		}
+	}
+</style>
+
+
+	<h2 align="center">I'm Student</h2>
+	<!--Step 1 : Adding HTML-->
+	<form action="/action_page.php">
+		<div class="imgcontainer">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+				alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+		
+			<button type="submit">Login</button>
+		</div>
+
+	</form>
+		    </div>
+		    
+		    <!--iam teacher-->
+		    <div class="iamteacher">
+		    
+<style>
+	/*set border to the form*/
+	
+	form {
+		border: 3px solid #f1f1f1;
+	}
+	/*assign full width inputs*/
+	
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+	/*set a style for the buttons*/
+	
+	button {
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+	/* set a hover effect for the button*/
+	
+	button:hover {
+		opacity: 0.8;
+	}
+	/*set extra style for the cancel button*/
+	
+	.cancelbtn {
+		width: auto;
+		padding: 10px 18px;
+		background-color: #f44336;
+	}
+	/*centre the display image inside the container*/
+	
+	.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+	}
+	/*set image properties*/
+	
+	img.avatar {
+		width: 40%;
+		border-radius: 50%;
+	}
+	/*set padding to the container*/
+	
+	.container {
+		padding: 16px;
+	}
+	/*set the forgot password text*/
+	
+	span.psw {
+		float: right;
+		padding-top: 16px;
+	}
+	/*set styles for span and cancel button on small screens*/
+	
+	@media screen and (max-width: 300px) {
+		span.psw {
+			display: block;
+			float: none;
+		}
+		.cancelbtn {
+			width: 100%;
+		}
+	}
+</style>
+
+
+	<h2 align="center">I'm Student</h2>
+	<!--Step 1 : Adding HTML-->
+	<form action="/action_page.php">
+		<div class="imgcontainer">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+				alt="Avatar" class="avatar">
+		</div>
+
+		<div class="container">
+		
+			<button type="submit">Login</button>
+		</div>
+
+	</form>
+		</div>
 			
 			
 			
@@ -215,7 +373,7 @@ Before we can look into the php code, you need to create a database called "feed
     <!-- /.container -->
 	
 	<div class="navbar-fixed-bottom nav navbar-inverse text-center" style="padding:15px;height:40px; background:#66CCFF">
-		<span style="color:#FFFFFF">Developed By ....... 	<a href="http://www.phptpoint.com">Phptpoint.com</a> </span>
+		<span style="color:#FFFFFF">Developed By .......Kushal and Mohith.</span>
 	</div>
     <!-- jQuery -->
     <script src="css/jquery.js"></script>
