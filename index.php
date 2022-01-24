@@ -12,7 +12,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 	<title>Online feedback System</title>
-	
+
 	<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -37,33 +37,34 @@ session_start();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <img height="70px" width="80px" src="svce.png" alt="Italian Trulli">
                 <a class="navbar-brand" href="index.php" style="color:#FFFFFF">Online feedback System</a>
-				
-				
+
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    
+
 					 <li style="color:#FFFFFF">
                         <a style="color:#FFFFFF" href="index.php"><i class="fa fa-home fa-fw"></i>Home</a>
                     </li>
 
-			<li><a style="color:#FFFFFF" href="index.php?info=registration"><i class="fa fa-sign-out fa-fw"></i>Registration</a></li>
-				
-				
-								
+					<li><a style="color:#FFFFFF" href="index.php?info=registration"><i class="fa fa-sign-out fa-fw"></i>Registration</a></li>
+
+
+
 	<li class="dropdown">
         <a style="color:#FFFFFF" href="#" class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-sign-in fa-fw"></i>Login
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
+
           <li><a href="index.php?info=login">Student</a></li>
-		  <li><a href="index.php?info=faculty_login">Faculty</a></li> 
-          <li><a href="admin">Admin</a></li> 
+		  <li><a href="index.php?info=faculty_login">Faculty</a></li>
+          <li><a href="admin">Admin</a></li>
         </ul>
-      </li> 
-	  
+      </li>
+
 
                 </ul>
             </div>
@@ -72,40 +73,40 @@ session_start();
         <!-- /.container -->
     </nav>
 
-<?php 
+<?php
 					@$info=$_GET['info'];
 					if($info!="")
 					{
-											
+
 						 if($info=="about")
 						 {
 						 include('about.php');
 						 }
-						
-						
-						
-						
 
-						 
+
+
+
+
+
 						 else if($info=="contact")
 						 {
 						 include('contact.php');
 						 }
-						
-						
-						 
-						 
+
+
+
+
 						 else if($info=="login")
 						 {
 						 include('login.php');
 						 }
-						 
+
 						  else if($info=="faculty_login")
 						 {
 						 include('faculty_login.php');
 						 }
-						 
-						 
+
+
 						 else if($info=="registration")
 						 {
 						 	include('registration.php');
@@ -126,30 +127,30 @@ session_start();
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                
+
                 <div class="fill" style="background-image:url('images/feedback.jpg');"></div>
 				<div class="carousel-caption">
-                    
+
                 </div>
             </div>
-           
+
             <div class="item">
                 <div class="fill" style="background-image:url('images/feedback1.jpg');"></div>
                 <div class="carousel-caption">
-                   
+
                 </div>
             </div>
-			
+
 			 <div class="item">
                 <div class="fill" style="background-image:url('images/feedback3.jpg');"></div>
                 <div class="carousel-caption">
-                   
+
                 </div>
             </div>
-			
-			
-			
-			
+
+
+
+
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
@@ -158,222 +159,222 @@ session_start();
             <span class="icon-next"></span>
         </a>
     </header>
-<!-- slider -->			
-	
-	
+<!-- slider -->
+
+
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
             <div class="col-lg-12">
-               
-				
-		    
-	<!--iam student-->
-		    <div class"iamstudent">
-			    
-<style>
-	/*set border to the form*/
-	
-	form {
-		border: 3px solid #f1f1f1;
-	}
-	/*assign full width inputs*/
-	
-	input[type=text],
-	input[type=password] {
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		box-sizing: border-box;
-	}
-	/*set a style for the buttons*/
-	
-	button {
-		background-color: #4CAF50;
-		color: white;
-		padding: 14px 20px;
-		margin: 8px 0;
-		border: none;
-		cursor: pointer;
-		width: 100%;
-	}
-	/* set a hover effect for the button*/
-	
-	button:hover {
-		opacity: 0.8;
-	}
-	/*set extra style for the cancel button*/
-	
-	.cancelbtn {
-		width: auto;
-		padding: 10px 18px;
-		background-color: #f44336;
-	}
-	/*centre the display image inside the container*/
-	
-	.imgcontainer {
-		text-align: center;
-		margin: 24px 0 12px 0;
-	}
-	/*set image properties*/
-	
-	img.avatar {
-		width: 40%;
-		border-radius: 50%;
-	}
-	/*set padding to the container*/
-	
-	.container {
-		padding: 16px;
-	}
-	/*set the forgot password text*/
-	
-	span.psw {
-		float: right;
-		padding-top: 16px;
-	}
-	/*set styles for span and cancel button on small screens*/
-	
-	@media screen and (max-width: 300px) {
-		span.psw {
-			display: block;
-			float: none;
-		}
-		.cancelbtn {
-			width: 100%;
-		}
-	}
-</style>
 
 
-	<h2 align="center">I'm Student</h2>
-	<!--Step 1 : Adding HTML-->
-	<form action="/action_page.php">
-		<div class="imgcontainer">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-				alt="Avatar" class="avatar">
-		</div>
-
-		<div class="container">
-		
-			<button type="submit">Login</button>
-		</div>
-
-	</form>
-		    </div>
-		    
-		    <!--iam teacher-->
-		    <div class="iamteacher">
-		    
-<style>
-	/*set border to the form*/
-	
-	form {
-		border: 3px solid #f1f1f1;
-	}
-	/*assign full width inputs*/
-	
-	input[type=text],
-	input[type=password] {
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		box-sizing: border-box;
-	}
-	/*set a style for the buttons*/
-	
-	button {
-		background-color: #4CAF50;
-		color: white;
-		padding: 14px 20px;
-		margin: 8px 0;
-		border: none;
-		cursor: pointer;
-		width: 100%;
-	}
-	/* set a hover effect for the button*/
-	
-	button:hover {
-		opacity: 0.8;
-	}
-	/*set extra style for the cancel button*/
-	
-	.cancelbtn {
-		width: auto;
-		padding: 10px 18px;
-		background-color: #f44336;
-	}
-	/*centre the display image inside the container*/
-	
-	.imgcontainer {
-		text-align: center;
-		margin: 24px 0 12px 0;
-	}
-	/*set image properties*/
-	
-	img.avatar {
-		width: 40%;
-		border-radius: 50%;
-	}
-	/*set padding to the container*/
-	
-	.container {
-		padding: 16px;
-	}
-	/*set the forgot password text*/
-	
-	span.psw {
-		float: right;
-		padding-top: 16px;
-	}
-	/*set styles for span and cancel button on small screens*/
-	
-	@media screen and (max-width: 300px) {
-		span.psw {
-			display: block;
-			float: none;
-		}
-		.cancelbtn {
-			width: 100%;
-		}
-	}
-</style>
 
 
-	<h2 align="center">I'm Student</h2>
-	<!--Step 1 : Adding HTML-->
-	<form action="/action_page.php">
-		<div class="imgcontainer">
-			<img src=
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-				alt="Avatar" class="avatar">
-		</div>
 
-		<div class="container">
-		
-			<button type="submit">Login</button>
-		</div>
 
-	</form>
-		</div>
-			
-			
-			
-			
+
+
+
+
+              <style>
+
+                  .student {
+                      width:300px;
+                      height:100px;
+                      position:relative;
+                      display:inline-block;
+                  }
+              	/*set border to the form*/
+
+              	form {
+              		border: 3px solid #f1f1f1;
+              	}
+              	/*assign full width inputs*/
+
+              	input[type=text],
+              	input[type=password] {
+              		width: 100%;
+              		padding: 12px 20px;
+              		margin: 8px 0;
+              		display: inline-block;
+              		border: 1px solid #ccc;
+              		box-sizing: border-box;
+              	}
+              	/*set a style for the buttons*/
+
+              	button {
+              		background-color: #4CAF50;
+              		color: white;
+              		padding: 10px;
+              		margin: 8px 0;
+              		border: none;
+              		cursor: pointer;
+              		width: 100%;
+              	}
+              	/* set a hover effect for the button*/
+
+              	button:hover {
+              		opacity: 0.8;
+              	}
+
+              	/*centre the display image inside the container*/
+
+              	.imgcontainer {
+              		text-align: center;
+              		margin: 24px 0 12px 0;
+              	}
+              	/*set image properties*/
+
+              	img.avatar {
+              		width: 40%;
+              		border-radius: 50%;
+              	}
+              	/*set padding to the container*/
+
+              	.logincontainer {
+              		padding: 16px;
+              	}
+              	/*set the forgot password text*/
+
+              	span.psw {
+              		float: right;
+              		padding-top: 16px;
+              	}
+              	/*set styles for span and cancel button on small screens*/
+
+              	@media screen and (max-width: 300px) {
+              		span.psw {
+              			display: block;
+              			float: none;
+              		}
+              		.cancelbtn {
+              			width: 100%;
+              		}
+              	}
+              </style>
+
+              <div class="student" width=100px height=100px >
+              	<h2 align="center">I'm Student</h2>
+              	<!--Step 1 : Adding HTML-->
+              	<form action="/action_page.php">
+              		<div class="imgcontainer">
+              			<img src=
+              "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+              				alt="Avatar" class="avatar">
+              		</div>
+
+              		<div class="logincontainer">
+
+              			<button><a href="index.php?info=login">Login</a></button>
+              		</div>
+
+              	</form>
+              </div>
+
+              <style>
+
+                  .teacher{
+                      width:300px;
+                      height:100px;
+                      position:relative;
+                      display:inline-block;
+                  }
+              	/*set border to the form*/
+
+              	form {
+              		border: 3px solid #f1f1f1;
+              	}
+              	/*assign full width inputs*/
+
+              	input[type=text],
+              	input[type=password] {
+              		width: 100%;
+              		padding: 12px 20px;
+              		margin: 8px 0;
+              		display: inline-block;
+              		border: 1px solid #ccc;
+              		box-sizing: border-box;
+              	}
+              	/*set a style for the buttons*/
+
+              	button {
+              		background-color: #4CAF50;
+              		color: white;
+              		padding: 14px 20px;
+              		margin: 8px 0;
+              		border: none;
+              		cursor: pointer;
+              		width: 100%;
+              	}
+              	/* set a hover effect for the button*/
+
+              	button:hover {
+              		opacity: 0.8;
+              	}
+
+              	/*centre the display image inside the container*/
+
+              	.imgcontainer {
+              		text-align: center;
+              		margin: 24px 0 12px 0;
+              	}
+              	/*set image properties*/
+
+              	img.avatar {
+              		width: 40%;
+              		border-radius: 50%;
+              	}
+              	/*set padding to the container*/
+
+              	.logincontainer {
+              		padding: 16px;
+              	}
+              	/*set the forgot password text*/
+
+              	span.psw {
+              		float: right;
+              		padding-top: 16px;
+              	}
+              	/*set styles for span and cancel button on small screens*/
+
+              	@media screen and (max-width: 300px) {
+              		span.psw {
+              			display: block;
+              			float: none;
+              		}
+
+              	}
+              </style>
+
+              <div class=teacher>
+              	<h2 align="center">I'm Teacher</h2>
+              	<!--Step 1 : Adding HTML-->
+              	<form action="/action_page.php">
+              		<div class="imgcontainer">
+              			<img src=
+              "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
+              				alt="Avatar" class="avatar">
+              		</div>
+
+              		<div class="logincontainer">
+
+              			<button><a href="index.php?info=faculty_login">Login</a></button>
+              		</div>
+
+              	</form>
+              	</div>
+
+
+
 				<?php } ?>
             </div>
-            
+
     </div>
     <!-- /.container -->
-	
+
 	<div class="navbar-fixed-bottom nav navbar-inverse text-center" style="padding:15px;height:40px; background:#66CCFF">
-		<span style="color:#FFFFFF">Developed By .......Kushal and Mohith.</span>
+		<span style="color:#FFFFFF">Developed By .......Kushal and Mohith. </span>
 	</div>
     <!-- jQuery -->
     <script src="css/jquery.js"></script>
